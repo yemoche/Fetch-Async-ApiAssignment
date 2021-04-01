@@ -1,4 +1,4 @@
-//getting the base URL
+//getting the base URL and fetching from it using async and await function
 
 const baseUrl = 'https://api.spacexdata.com'
 const contentDiv = document.querySelector('.content')

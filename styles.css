@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: rgba(238, 248, 248, 0.425);
+    background-color: rgba(36, 85, 85, 0.425);
 }
 
 h1 {
     background-color:rgb(189, 192, 212);
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 0;
     margin-bottom: 5px;
     font-size: 40px;
     color: rgb(17, 35, 136);
@@ -35,7 +35,7 @@ h2 {
 
 p {
      margin-top: 20px;
-     color: rgba(248, 185, 10, 0.986);
+     color: rgba(8, 6, 1, 0.986);
  }
 
 /***Animation Process***/

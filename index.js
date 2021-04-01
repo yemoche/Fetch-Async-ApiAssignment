@@ -1,4 +1,4 @@
-//getting the base URL and fetching from it using async and await function
+//getting the base URL and fetching from it using async and await function, with the try and catch erro function
 
 const baseUrl = 'https://api.spacexdata.com'
 const contentDiv = document.querySelector('.content')
@@ -11,12 +11,12 @@ const getData = async () => {
         console.log(error);
     }
 }
-
+// making use of the Json data and using DOM manipulation
 window.addEventListener('load', async ()=> {
     const launchesData = await getData();
     const firstLaunchData = launchesData[0];
     const secondLaunchData = launchesData[1];
-    
+// Placing the html objects in the webpage document page    
     contentDiv.innerHTML = `
       <h2>${firstLaunchData.mission_name}</h3>
       <p>${firstLaunchData.launch_site.site_name_long}</p>
@@ -26,8 +26,8 @@ window.addEventListener('load', async ()=> {
       
     `
 })
-
-function myMove() {
+// Declaring the animation footer function
+function animationObject() {
     let el = document.getElementById("animate");
     let locationPosition = 0;
     let frameSetting = setInterval(frame, 9);
@@ -41,10 +41,3 @@ function myMove() {
         }
     }
 }
-
-
-
-
-
-
-
